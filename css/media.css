@@ -1,0 +1,165 @@
+
+@media screen and (max-width: 500px) and (min-width: 450px) {
+  #timer {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .collab,
+  #personal,
+  #media,
+  #address {
+    text-align: center;
+  }
+
+  #previous-sponsors {
+    margin-left: 0px;
+  }
+  #previous-sponsors .email {
+    margin-left: 5px;
+  }
+  .social-links li a img {
+    margin-left: -10px;
+  }
+
+  .social-media ul {
+    width: 60%;
+    margin: auto;
+  }
+  .social-links {
+    margin-left: -12px;
+  }
+  #toggle {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 6px;
+    margin-right: 4px;
+  }
+  nav #brand {
+    margin-left: 24px;
+  }
+
+  #menu a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  #resize li span {
+    font-weight: bolder;
+  }
+
+  nav #menu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  #resize {
+    visibility: hidden !important;
+  }
+}
+
+
+@media screen and (min-width: 30em) {
+  .btn {
+    max-width: 220px;
+ }
+  .btn.btn-small {
+    max-width: 180px;
+ }
+}
+@media screen and (min-width: 40em) {
+  .btn {
+    display: inline-block;
+ }
+}
+
+
+@media screen and (min-width: 30em) {
+  .btn {
+    max-width: 220px;
+ }
+  .btn.btn-small {
+    max-width: 180px;
+ }
+}
+@media screen and (min-width: 40em) {
+  .btn {
+    display: inline-block;
+ }
+}
+
+/* @media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+} */
+
+
+@media (max-width: 768px) {
+  
+}
+
+
+
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 988px) {
+  #explore h3 {
+    text-align: center;
+  }
+  #explore h4 {
+    text-align: center;
+  }
+  .follow-us ul {
+    width: 64%;
+  }
+  .social-links li {
+    width: 65%;
+    margin: auto;
+  }
+  #contact-info h4 {
+    width: 21%;
+    margin: auto;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 441px) {
+  .social-links li {
+    margin-left: 0px;
+  }
+
+  .social-links li a img {
+    margin-left: -20px;
+  }
+  .social-media ul {
+    width: 79%;
+    margin: auto;
+  }
+
+  #contact-info h4 {
+    width: 42%;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  .odd {
+    margin-left: 0px !important;
+  }
+  .even {
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 320px) {
+  .social-links {
+    margin-left: -21px;
+  }
+  .social-links li {
+    margin-right: 10px;
+  }
+}
+
+
+
