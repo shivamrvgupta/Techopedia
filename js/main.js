@@ -114,3 +114,70 @@ TweenMax.staggerFrom(
   },
   0.1
 );
+
+
+$(document).ready(function () {
+
+  function second_passed() {
+    $('.clock').removeClass('is-off');
+  }
+  setTimeout(second_passed, 2000)
+
+  $('.switcher').on('click', function(e) {
+    e.preventDefault();
+    $('.screen').toggleClass('glitch');
+  });
+
+
+  var newDate = new Date();
+  newDate.setDate(newDate.getDate());
+
+  setInterval( function() {
+
+    var hours    = new Date().getHours();
+    var seconds  = new Date().getSeconds();
+    var minutes  = new Date().getMinutes();
+
+    var realTime = ( hours < 10 ? '0' : '' ) + hours + ' : ' + ( minutes < 10 ? '0' : '' ) + minutes + ' : ' + ( seconds < 10 ? '0' : '' ) + seconds
+
+    $('.time').html(realTime);
+    $('.time').attr('data-time', realTime);
+
+  }, 1000);
+
+});
+
+
+
+
+// FAQ
+
+let toggles = document.getElementsByClassName('faq-wrapper');
+let contentDiv = document.getElementsByClassName('faq-content');
+let icons = document.getElementsByClassName('bx');
+
+for(let i=0; i<toggles.length; i++){
+    toggles[i].addEventListener('click', ()=>{
+        if( parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight){
+            contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+            toggles[i].style.color = "#23daab";
+            icons[i].classList.remove('bx-plus');
+            icons[i].classList.add('bx-minus');
+        }
+        else{
+            contentDiv[i].style.height = "0px";
+            toggles[i].style.color = "#111130";
+            icons[i].classList.remove('bx-minus');
+            icons[i].classList.add('bx-plus');
+        }
+
+        for(let j=0; j<contentDiv.length; j++){
+            if(j!==i){
+                contentDiv[j].style.height = "0px";
+                toggles[j].style.color = "#111130";
+                icons[j].classList.remove('bx-minus');
+                icons[j].classList.add('bx-plus');
+            }
+        }
+    });
+}

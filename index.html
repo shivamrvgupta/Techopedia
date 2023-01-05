@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- custom -->
-  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/media.css">
+  <script src="Techopedia/Techopedia/js/main.js"></script>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -35,7 +35,7 @@
   <div class="wrapper">
     <nav class="homeBg" id="navBg">
       <span id="brand">
-        <a href="#techopediaXI"><img class="logo" src="img/IEEE SIESGST_white.png" alt=""></a>
+        <a href="#techopediaXI"><img class="logo" src="Images\IEEE SIESGST_white.png" alt=""></a>
       </span>
 
       <ul id="menu" class="menu pt-3">
@@ -55,7 +55,7 @@
           <a href="#sponsors">Sponsors</a>
         </li>
         <li class="nav">
-          <a href="#questions">FAQ</a>
+          <a href="#faq">FAQ</a>
         </li>
       </ul>
 
@@ -82,7 +82,7 @@
           <a href="#sponsors">Sponsors</a>
         </li>
         <li class="nav">
-          <a href="#questions">FAQ</a>
+          <a href="#faq">FAQ</a>
         </li>
       </ul>
     </div>
@@ -90,27 +90,24 @@
 
   <!-- HOME SECTION  -->
 
-  <section class="Home" id="home">
-    <div class="hero" >
-      <div class="header container">
-        <h1 class="primary-text">
-          <span class="glitch" data-text="Techopedia-XI"> Techopedia-XI</span>
-        </h1>
-        
-        
+  <section class="home py-5" id="home">
+        <div class="content">
+          <h2 class="text" data-text="Techopedia-XI">
+             Techopedia-XI
+          </h2>
         </div>
-    </div>
+        <div class="screen glitch">
+          <a class="switcher" href="#"></a>
+          <div class="clock is-off"><span class="time" data-time=""></span></div>
+          <div class="figure"></div>
+          <div class="figure-mask"></div>
+        </div>
 
-    <div class="countdown" id="demo">
-      <div id="timer" class=" d-flex align-items-center justify-content-center mt-lg-3">
-        <div id="days" class="align-items-center flex-column d-flex justify-content-center" style="border-radius: 50%;border: 2px solid #00FFBB;">0<span><p style="font-size: 12px;">Days</p></span></div>
-        <div id="hours" class="align-items-center flex-column d-flex justify-content-center"style="border-radius: 50%;border: 2px solid #00FFBB;">0<span><p style="font-size: 12px;">Hours</p></span></div>
-        <div id="minutes" class="align-items-center flex-column d-flex justify-content-center"style="border-radius: 50%;border: 2px solid #00FFBB;">0<span><p style="font-size: 12px;">Minutes</p></span></div>
-        <div id="seconds" class="align-items-center flex-column d-flex justify-content-center"style="border-radius: 50%;border: 2px solid #00FFBB;">0<span><p style="font-size: 12px;">Seconds</p></span></div>
-      </div>
-    </div>
   </section>
+  <br>
+  <br>
 
+  
   <section class="campus my-5" id="about">
     <div class="about" id="about">
       <h3 class="secondary-title text-center pt-2 pb-2">About Us</h3>
@@ -135,7 +132,7 @@
           <div class="col-sm-12 col-md-6 py-5">
             <div class="campus-col-events">
               <div class="card layer1">
-                <img src="./img/splash.jpeg" alt="">
+                <img src="./Images/splash.jpeg" alt="">
                 <div class="layer-left">
                   <h1>squabble</h1>
                   <p>It is a National Level Debate Competition and a platform to showcase your oratory skills with a technical perspective which will consist of group discussion and one-on-one debate with time limitations.</p>
@@ -155,7 +152,7 @@
           <div class="col-sm-12 col-md-6 py-5">
             <div class="campus-col-events">
               <div class="card layer2">
-                <img src="./img/splash.jpeg" alt="">
+                <img src="./Images/splash.jpeg" alt="">
               </div>
               <div class="layer-right">
                 <h1>squabble</h1>
@@ -175,7 +172,7 @@
           <div class="col-sm-12 col-md-6 py-5">
             <div class="campus-col-events">
               <div class="card layer1">
-                <img src="./img/splash.jpeg" alt="">
+                <img src="./Images/splash.jpeg" alt="">
                 <div class="layer-left">
                   <h1>squabble</h1>
                   <p>It is a National Level Debate Competition and a platform to showcase your oratory skills with a technical perspective which will consist of group discussion and one-on-one debate with time limitations.</p>
@@ -195,7 +192,7 @@
           <div class="col-sm-12 col-md-6 py-5">
             <div class="campus-col-events">
               <div class="card layer2">
-                <img src="./img/splash.jpeg" alt="">
+                <img src="./Images/splash.jpeg" alt="">
               </div>
               <div class="layer-right">
                 <h1>squabble</h1>
@@ -219,8 +216,6 @@
     </div>
 
   </section>
-  
-
   
   <br><br>
    
@@ -323,63 +318,77 @@
                   </div>
               </section>
 
+            <section class="faq py-5" id="faq"> 
               <p id="title" class="faq">
                 FREQUENTLY ASKED QUESTIONS ?
-          </p>
-          <div id="container">
-         
-          <div class="faq" id="questions" >
-         
-              <div class="block" id="q1">
-      
-                 <details class="details">
-                  <summary >What is Techopedia?</summary>
-                  <p class="a">Techopedia is the annual technical fest of IEEE SIES GST. This year we are celebrating its tenth edition. </p>
-                 </details>
+              </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-sm12">
+                  
+                    <div class="faq-wrapper faq-shadow">
+                      <div class="block">
+                        <button class="toggle">
+                          What is Techopedia?
+                            <i class='bx bx-plus'></i>
+                        </button>
+                        <div class="faq-content">
+                          <p>Techopedia is the annual technical fest of IEEE SIES GST. This year we are celebrating its tenth edition. </p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="faq-wrapper faq-shadow">
+                      <button class="toggle">
+                        What does the theme 'Epoch' imply?
+                          <i class='bx bx-plus'></i>
+                      </button>
+                      <div class="faq-content">
+                          <p>To celebrate the glory that Techopedia has achieved over a decade we derived that nothing is grander than the concept of time. For Techopedia 10.0 we are looking to cruise through time and create a perceptive experience for the senses. Maneuvering through the past over the present and to the future is our endeavour.  </p>
+                      </div>
+                  </div>
+                  <div class="faq-wrapper faq-shadow">
+                      <button class="toggle">
+                        What are benefits of participating in the events
+                          <i class='bx bx-plus'></i>
+                      </button>
+                      <div class="faq-content">
+                          <p>By simply participating you increase the likelihood of winning exciting cash prizes, coupons, goodies and national-level certificates. </p>
+                      </div>
+                  </div>
+                  <div class="faq-wrapper faq-shadow">
+                      <button class="toggle">
+                        What is the registration fee?
+                          <i class='bx bx-plus'></i>
+                      </button>
+                      <div class="faq-content">
+                          <p>There is absolutely no registration fee. Your entry is absolutely free!  </p>
+                      </div>
+                  </div>
+                  <div class="faq-wrapper faq-shadow">
+                      <button class="toggle">
+                        How will I stay up-to-date with the event timeline?
+                          <i class='bx bx-plus'></i>
+                      </button>
+                      <div class="faq-content">
+                          <p>You can keep an eye out for updates on our social medias’ linked below and join our WhatsApp group after registration to keep a track of the happenings  </p>
+                      </div>
+                  </div>
+                  <div class="faq-wrapper faq-shadow">
+                      <button class="toggle">
+                        Is On-day registration open?
+                          <i class='bx bx-plus'></i>
+                      </button>
+                      <div class="faq-content">
+                          <p> On-day registrations are unavailable! So register before the closing date for incredible fun through Techopedia X.   </p>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6 col-sm12 faq-img">
+                    <img src="./Images/faq.jpeg" alt="" width="100%" height="100%">
+                  </div>
+                </div>
               </div>
-         
-              <div class="block" id="q2">
-                 <details class="details">
-                  <summary >What does the theme 'Epoch' imply?</summary>
-                  <p class="a"> To celebrate the glory that Techopedia has achieved over a decade we derived that nothing is grander than the concept of time. For Techopedia 10.0 we are looking to cruise through time and create a perceptive experience for the senses. Maneuvering through the past over the present and to the future is our endeavour.  </p>
-                 </details>
-              </div>
-         
-              <div class="block" id="q3">
-      
-                 <details class="details">
-                  <summary >What are benefits of participating in the events?</summary>
-                  <p class="a"> By simply participating you increase the likelihood of winning exciting cash prizes, coupons, goodies and national-level certificates.  </p>
-                 </details>
-              </div>
-         
-              <div class="block" id="q4">
-                 <details class="details">
-                  <summary >What is the registration fee?</summary>
-                  <p class="a">There is absolutely no registration fee. Your entry is absolutely free! </p>
-                 </details>
-              </div>
-         
-              <div class="block" id="q5">
-                 <details class="details">
-                  <summary >How will I stay up-to-date with the event timeline?</summary>
-                  <p class="a"> You can keep an eye out for updates on our social medias’ linked below and join our WhatsApp group after registration to keep a track of the happenings  </p>
-                 </details>
-              </div>
-         
-              <div class="block" id="q6">
-      
-                 <details class="details">
-                  <summary >Is On-day registration open?</summary>
-                  <p class="a"> On-day registrations are unavailable! So register before the closing date for incredible fun through Techopedia X.   </p>
-                 </details>
-              </div>
-      
-         
-              </div> 
-              <img src="assets/main/faq 1.jpg" alt="MOST POPULAR QUESTIONS OF TECHOPEDIA 11" class="img1">
-              </div>
-              
+            </section>  
               <br><br>
       
 <!--Footer-->
@@ -410,24 +419,24 @@
           
                         <ul class="social-links">
                           <li id="insta" class="wow fadeInUp" data-wow-delay="0.6s"><a target="_blank"
-                              href="https://www.instagram.com/ieeesiesgst/?hl=en"><img src="img/InstagramLogo (1).png"
+                              href="https://www.instagram.com/ieeesiesgst/?hl=en"><img src="Images\InstagramLogo (1).png"
                                 alt=""></a>
                           </li>
                           <li class="wow fadeInUp" data-wow-delay="1s"><a target="_blank"
-                              href="https://www.linkedin.com/company/ieee-gst"><img src="img/LinkedinLogo.png" alt=""></a></li>
+                              href="https://www.linkedin.com/company/ieee-gst"><img src="Images\LinkedinLogo.png" alt=""></a></li>
           
                           <li class="wow fadeInUp" data-wow-delay="0.8s"><a target="_blank"
-                              href="https://twitter.com/_ieeesiesgst?s=09"><img src="img/twitter logo.png" alt=""></li>
+                              href="https://twitter.com/_ieeesiesgst?s=09"><img src="Images\twitter logo.png" alt=""></li>
                           <li class="wow fadeInUp" data-wow-delay="1s"><a target="_blank"
-                              href="https://www.youtube.com/c/IEEESIESGST"><img src="img/youtube logo.png" alt=""></a></li>
+                              href="https://www.youtube.com/c/IEEESIESGST"><img src="Images\youtube logo.png" alt=""></a></li>
                           <li class="wow fadeInUp" data-wow-delay="0.4s"><a target="_blank"
                               href="https://www.facebook.com/groups/714385779076148/?ref=share"><img
-                                src="img/FacebookLogo.png" alt=""></a></li>
+                                src="Images\FacebookLogo.png" alt=""></a></li>
                           <li class="wow fadeInUp" data-wow-delay="1s"><a target="_blank"
                               href="https://open.spotify.com/show/08snSfTbCS9EcxWTDIJYuV?si=s5eliMbwTPeOXAC2ZG8MDg&utm_source=copy-link"><img
-                                src="img/SpotifyLogo.png" alt=""></a></li>
+                                src="Images\SpotifyLogo.png" alt=""></a></li>
                           <li class="wow fadeInUp" data-wow-delay="1s"><a target="_blank"
-                              href="https://github.com/ieeesiesgst"><img src="img/github logo.png" alt=""></a></li>
+                              href="https://github.com/ieeesiesgst"><img src="Images\github logo.png" alt=""></a></li>
                         </ul>
           
           
@@ -467,4 +476,3 @@
 
 </body>
 </html>
-

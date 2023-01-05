@@ -1,11 +1,20 @@
-
-@media screen and (max-width: 500px) and (min-width: 450px) {
-  #timer {
-    margin-top: 40px;
-  }
-}
-
 @media (max-width: 768px) {
+  .home{
+    height: 75vh;
+  }
+  .content .text {
+    font-size: 2rem;
+    padding: 8px;
+  }
+  .clock .time{
+    font-size: 70px;
+  }
+  .glitch{
+    top: -15rem;
+  }
+  .clock{
+    padding-bottom: 0;
+  }
   .collab,
   #personal,
   #media,
@@ -52,8 +61,276 @@
   nav #menu {
     display: none;
   }
+  .faq-img{
+    display: none;
+  }
 }
 
+@media(max-width: 670px){
+  .home{
+    height: 55vh;
+  }
+  .content .text {
+    font-size: 2rem;
+    padding: 8px;
+  }
+  .clock .time{
+    font-size: 70px;
+  }
+  .glitch{
+    top: -15rem;
+  }
+  .clock{
+    width: 100%;
+    text-align: center;
+  }
+  .events h3{
+    font-size: 4rem;
+  }
+  .layer-left h1{
+    font-size: 3rem;
+  }
+  .layer-left p{
+    font-size: 1.5rem;
+  }
+  .layer-left .button{
+    right: 0%;
+    font-size: 1.2rem;
+  }
+  .layer-right h1{
+    font-size: 3rem;
+  }
+  .layer-right p{
+    font-size: 1.5rem;
+  }
+  .layer-right .button{
+    left: 5%;
+    font-size: 1.2rem;
+  }
+  .btn-small{
+    max-width: 180px !important;
+  }
+}
+@media(max-width: 600px){
+  .events h3{
+    font-size: 3rem;
+  }
+  .layer-left h1{
+    font-size: 2.75rem;
+  }
+  .layer-left p{
+    font-size: 1.2rem;
+  }
+  .layer-left .button{
+    right: 0%;
+    font-size: 1rem;
+  }
+  .layer-right h1{
+    font-size: 2.75rem;
+  }
+  .layer-right p{
+    font-size: 1.2rem;
+  }
+  .layer-right .button{
+    left: 5%;
+    font-size: 1rem;
+  }
+  .btn-small{
+    max-width: 160px !important;
+  }
+}
+@media(max-width: 550px){
+  .home{
+    height: 55vh;
+  }
+  .content .text {
+    font-size: 1.7rem;
+    padding: 4px;
+    transform: scale(1.5);
+  }
+  .clock .time{
+    font-size: 50px;
+  }
+  .glitch{
+    top: -15rem;
+  }
+  .clock{
+    width: 100%;
+    text-align: center;
+  }
+  .content .text:before, .content .text:after {
+      top: -26px;
+  }
+  .content .text:before {
+      left: -18px;
+  }
+   .events h3{
+    font-size: 3rem;
+  }
+  .layer-left h1{
+    font-size: 2.25rem;
+  }
+  .layer-left p{
+    font-size: 1.1rem;
+  }
+  .layer-left .button{
+    right: 0%;
+    font-size: .9rem;
+  }
+  .layer-right h1{
+    font-size: 2.25rem;
+  }
+  .layer-right p{
+    font-size: 1.1rem;
+  }
+  .layer-right .button{
+    left: 5%;
+    font-size: .9rem;
+  }
+  .btn-small{
+    max-width: 140px !important;
+  }
+}
+
+@media(max-width: 450px){
+  .home{
+    height: 40vh;
+  }
+  .content .text {
+    margin-top: 14rem;
+    font-size: 1.1rem;
+    padding: 4px;
+    transform: scale(2);
+  }
+  .clock .time{
+    font-size: 50px;
+  }
+  .glitch{
+    top: -1rem;
+  }
+  .clock{
+    width: 100%;
+    text-align: center;
+  }
+  .content .text:before, .content .text:after {
+      top: -26px;
+  }
+  .content .text:before {
+      left: -24px;
+      width: 100%;
+  }
+  .events h3{
+    font-size: 2.75rem;
+  }
+  .layer-left h1{
+    font-size: 2rem;
+  }
+  .layer-left p{
+    font-size: 1rem;
+  }
+  .layer-left .button{
+    right: 0%;
+    font-size: .7rem;
+  }
+  .layer-right h1{
+    font-size: 2rem;
+  }
+  .layer-right p{
+    font-size: 1rem;
+  }
+  .layer-right .button{
+    left: 5%;
+    font-size: .7rem;
+  }
+  .btn-small{
+    max-width: 120px !important;
+    bottom: 1.72rem;
+  }
+}
+
+
+@media(max-width: 415px){
+  .content .text {
+    margin-top: 14rem;
+    font-size: .8rem;
+    padding: 4px;
+    transform: scale(2);
+  }
+  .clock .time{
+    font-size: 35px;
+  }
+  .glitch{
+    top: 2rem;
+  }
+  .clock{
+    width: 100%;
+    text-align: center;
+  }
+  .content .text:before, .content .text:after {
+      top: -26px;
+  }
+  .content .text:before {
+      left: -24px;
+      width: 100%;
+  }
+  .events h3{
+    font-size: 2rem;
+  }
+  .layer-left h1{
+    font-size: 1.75rem;
+  }
+  .layer-left p{
+    font-size: .8rem;
+  }
+  .layer-left .button{
+    right: 0%;
+    font-size: .7rem;
+  }
+  .layer-right h1{
+    font-size: 1.75rem;
+  }
+  .layer-right p{
+    font-size: .8rem;
+  }
+  .layer-right .button{
+    left: 5%;
+    font-size: .7rem;
+  }
+  .btn-small{
+    max-width: 120px !important;
+    bottom: 1.72rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .events h3{
+    font-size: 2rem;
+  }
+  .layer-left h1{
+    font-size: 1.75rem;
+  }
+  .layer-left p{
+    font-size: .7rem;
+  }
+  .layer-left .button{
+    right: 0%;
+    font-size: .6rem;
+  }
+  .layer-right h1{
+    font-size: 1.75rem;
+ }
+  .layer-right p{
+    font-size: .7rem;
+  }
+  .layer-right .button{
+    left: 5%;
+    font-size: .6rem;
+  }
+  .btn-small{
+    max-width: 100px !important;
+    bottom: 1.2rem;
+  }
+}
 @media (min-width: 769px) {
   #resize {
     visibility: hidden !important;
