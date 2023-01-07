@@ -1,3 +1,7 @@
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+loader.style.display = "none";
+})
 // Glitch Timeline Function
 var $text = document.querySelector('.btn-glitch-active'),
     $filter = document.querySelector('.svg-sprite'),

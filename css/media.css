@@ -111,6 +111,17 @@
   }
 }
 
+@media (max-width:992px){
+  .collab,
+  #personal,
+  #media,
+  #address {
+    text-align: center;
+  }
+  .explore a{
+    margin: 0 3%
+  }
+}
 @media (max-width:950px){
   .content .text {
     font-size: 2.75rem;
@@ -187,7 +198,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .home{
     height: 75vh;
   }
@@ -208,6 +219,26 @@
   #media,
   #address {
     text-align: center;
+  }
+  .layer-left h1{
+    font-size: 2.75rem;
+  }
+  .layer-left p{
+    font-size: .7rem;
+  }
+  .layer-left .button{
+    right: 0%;
+    font-size: .5rem;
+  }
+  .layer-right h1{
+    font-size: 2.75rem;
+  }
+  .layer-right p{
+    font-size: .7rem;
+  }
+  .layer-right .button{
+    left: 0%;
+    font-size: .5rem;
   }
 
   #previous-sponsors {
@@ -230,7 +261,7 @@
   #toggle {
     visibility: visible;
     opacity: 1;
-    margin-top: 6px;
+    margin-top: -5px;
     margin-right: 4px;
   }
   nav #brand {
@@ -252,26 +283,6 @@
   .faq-img{
     display: none;
   }
-  .layer-left h1{
-    font-size: 4rem;
-  }
-  .layer-left p{
-    font-size: 1.8rem;
-  }
-  .layer-left .button{
-    right: 0%;
-    font-size: 1rem;
-  }
-  .layer-right h1{
-    font-size: 4rem;
-  }
-  .layer-right p{
-    font-size: 1.8rem;
-  }
-  .layer-right .button{
-    left: 0%;
-    font-size: 1rem;
-  }
 }
 
 @media(max-width: 670px){
@@ -288,7 +299,11 @@
     width: 100%;
     text-align: center;
   }
-  .events h3{
+  .events h3,
+  #timeline h2,
+  #sponsors h2,
+  #faq h2
+  {
     font-size: 4rem;
   }
   .layer-left h1{
@@ -325,7 +340,11 @@
   }
 }
 @media(max-width: 600px){
-  .events h3{
+  .events h3,
+  #timeline h2,
+  #sponsors h2,
+  #faq h2
+  {
     font-size: 3rem;
   }
   .layer-left h1{
@@ -380,7 +399,10 @@
   .about-text{
     font-size: 18px;
   }
-   .events h3{
+  .events h3,
+  #timeline h2,
+  #sponsors h2,
+  #faq h2{
     font-size: 3rem;
   }
   .layer-left h1{
@@ -434,7 +456,11 @@
       left: -24px;
       width: 100%;
   }
-  .events h3{
+  .events h3,
+  #timeline h2,
+  #sponsors h2,
+  #faq h2
+  {
     font-size: 2.75rem;
   }
   .layer-left h1{
@@ -487,7 +513,11 @@
       left: -24px;
       width: 100%;
   }
-  .events h3{
+  .events h3,
+  #timeline h2,
+  #sponsors h2,
+  #faq h2
+  {
     font-size: 2rem;
   }
   .layer-left h1{
@@ -517,7 +547,10 @@
 }
 
 @media (max-width: 350px) {
-  .events h3{
+  .events h3,
+  #timeline h2,
+  #sponsors h2,
+  #faq h2{
     font-size: 2rem;
   }
   .layer-left h1{
@@ -554,17 +587,6 @@
     flex-direction: column;
   }
 } */
-
-
-@media (max-width: 768px) {
-  
-}
-
-
-
-@media (max-width: 768px) {
-  
-}
 @media (max-width: 988px) {
   #explore h3 {
     text-align: center;
@@ -628,3 +650,33 @@
      height: 24rem;
   }
 }
+
+@media screen and (min-width:412px) and (max-width:915px) {
+  .sponsor-img{
+    margin-left: 10px;
+  }
+}
+
+  @media screen and (min-width:768px) and (max-width:1024px) {
+    .sponsor-img{
+      margin-left: -1px;
+    } }
+
+    @media screen and (min-width:912px) and (max-width:1368px) {
+      .sponsor-img{
+        margin-left: 70px;
+      }
+    }
+
+      @media screen and (min-width:600px) and (max-width:1024px) {
+        .sponsor-img{
+          margin-left: 110px;
+        }
+      }
+    
+
+        @media screen and (min-width:767px) and (max-width:995px) {
+        .menu{
+          width: 60%;
+        }
+      }

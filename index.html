@@ -38,7 +38,103 @@
 
   <title>Techopedia XI | IEEE SIESGST</title>
 </head>
-<body>
+<body onload="myFunction()"> 
+  <div id="preloader">
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
+<svg>
+	<defs>
+		<filter id="screen-glitch" x="-50%" y="-50%" width="200%" height="200%">
+			<feTurbulence type="fractalNoise" baseFrequency="0 0.01" result="noise" numOctaves="2"/>
+			<feDisplacementMap in="SourceGraphic" in2="noise" scale="200"/>
+		</filter>
+	</defs>
+</svg>
+<input type="checkbox" id="dark-mode">
+<div class="container">
+	<label for="dark-mode">
+		<div class="dark-mode-button_sun"></div>
+		<div class="dark-mode-button_moon"></div>
+	</label>
+	<header data-content="Techopedia-XI">TechoPedia-XI</header>
+	<div class="random-letters">
+		<div class="random-letters_letter">
+			<p>I</p>
+			<p>E</p>
+			<p>E</p>
+			<p>E</p>
+			<p>S</p>
+			<p>I</p>
+			<p>E</p>
+			<p>S</p>
+			<p>G</p>
+			<p>S</p>
+			<p>T</p>
+		</div>
+		<div class="random-letters_letter">
+			<p>L</p>
+			<p>M</p>
+			<p>U</p>
+			<p>{</p>
+			<p>}</p>
+			<p>F</p>
+			<p>-</p>
+			<p>H</p>
+			<p>*</p>
+			<p>9</p>
+		</div>
+		<div class="random-letters_letter">
+			<p>I</p>
+			<p>+</p>
+			<p>W</p>
+			<p>]</p>
+			<p>=</p>
+			<p>L</p>
+			<p>?</p>
+			<p>5</p>
+			<p>V</p>
+			<p>1</p>
+		</div>
+		<div class="random-letters_letter">
+			<p>T</p>
+			<p>D</p>
+			<p>7</p>
+			<p>$</p>
+			<p>S</p>
+			<p>~</p>
+			<p>C</p>
+			<p>%</p>
+			<p>"</p>
+			<p>5</p>
+		</div>
+		<div class="random-letters_letter">
+			<p>C</p>
+			<p>M</p>
+			<p>U</p>
+			<p>{</p>
+			<p>}</p>
+			<p>F</p>
+			<p>-</p>
+			<p>H</p>
+			<p>*</p>
+			<p>9</p>
+		</div>
+		<div class="random-letters_letter">
+			<p>H</p>
+			<p>+</p>
+			<p>W</p>
+			<p>]</p>
+			<p>=</p>
+			<p>L</p>
+			<p>?</p>
+			<p>5</p>
+			<p>V</p>
+			<p>1</p>
+		</div>
+		<p>...<div class="cursor">|</div></p>
+	</div>
+	<div class="loading-bar"></div>
+</div>
+  </div>
  <!--Navigation Bar-->
   <div class="wrapper">
     <nav class="homeBg" id="navBg">
@@ -55,7 +151,7 @@
         </li>
         <li class="nav">
           <a href="#timeline">Timeline</a>
-        </li> 
+        </li>
         <li class="nav">
           <a href="#sponsors">Sponsors</a>
         </li>
@@ -65,11 +161,15 @@
       </ul>
 
       <div id="toggle">
-        <div class="span">menu</div>
+        <div class="span">
+          <i class='bx bx-menu' ></i>
+        </div>
       </div>
     </nav>
     <div class="mobile-nav " id="resize">
-      <div class="close-btn">close</div>
+      <div class="close-btn">
+        <i class='bx bx-x'></i>
+      </div>
       <ul id="menu">
         <li class="nav">
           <a href="#home">Home</a>
@@ -79,7 +179,7 @@
         </li>
         <li class="nav">
           <a href="#timeline">Timeline</a>
-        </li> 
+        </li>
         <li class="nav">
           <a href="#sponsors">Sponsors</a>
         </li>
@@ -208,7 +308,7 @@
   </section>
   
   <section class="campus py-5" id="timeline">
-  <h2 class="secondary-title text-center mt-5 pt-2 pb-2" id="title">TIMELINE</h2>
+  <h2 class="secondary-title text-center mt-5 pb-2" id="title">TIMELINE</h2>
   <div class="container">
     <div class="timeline">
       <ul>
@@ -249,7 +349,7 @@
   <br><br>
    
   <section class="campus my-5" id="sponsors">
-    <h2 class="secondary-title text-center mt-5 pt-2 pb-2" id="title">SPONSORS</h2>
+    <h2 class="secondary-title text-center mt-5 pb-2" id="title">SPONSORS</h2>
   </section>
   <div class="sponsor-card">
     <!-- topcoder -->
@@ -286,7 +386,6 @@
     <img src="./Images/circle.png" class="sponsor-img" id="net"  />
   </div>
 
-
                   <!-- email part -->
               <section>
                   <div class="text-center">
@@ -300,9 +399,9 @@
 
               
           <section class="faq py-5" id="faq"> 
-              <p id="title" class="faq">
-                FREQUENTLY ASKED QUESTIONS ?
-              </p>
+            <h2 class="secondary-title text-center mt-5 pt-2 pb-2" id="title">
+              FREQUENTLY ASKED QUESTIONS ?
+            </h2>
               <div class="container">
                 <div class="row">
                   <div class="col-md-6 col-sm12">
@@ -392,10 +491,10 @@
 
       </div>
 
-      <div class="col-lg-6 footer-column">
+      <div class="col-lg-6 footer-column justify-content-center">
         <h3 class="follow-us text-center">Follow us at.</h3>
 
-        <ul class="social-links">
+        <ul class="social-links justify-content-center">
           <li id="insta" class="wow fadeInUp" data-wow-delay="0.6s"><a target="_blank"
               href="https://www.instagram.com/ieeesiesgst/?hl=en"><img src="Images\InstagramLogo (1).png"
                 alt=""></a>
