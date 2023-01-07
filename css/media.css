@@ -86,7 +86,9 @@
   .content .text:before, .content .text:after {
       top: -14px;
   }
-  
+  .about-cont{
+    top: -10rem;
+  }
   .layer-left h1{
     font-size: 2.5rem;
   }
@@ -192,6 +194,9 @@
   .content .text {
     font-size: 2rem;
     padding: 8px;
+  }
+  .about-cont{
+    top: -8rem;
   }
   #timer div{
     width: 90px;
@@ -355,7 +360,7 @@
     width: 60px;
     height: 60px;
     margin-top: -2rem;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
   }
   .clock{
@@ -369,6 +374,9 @@
     left: -1.5rem;
     padding: 23px;
     width: 40rem;
+  }
+  .about-text{
+    font-size: 18px;
   }
    .events h3{
     font-size: 3rem;
@@ -397,12 +405,18 @@
 
 @media(max-width: 450px){
   .home{
-    height: 40vh;
+    height: 64vh;
+  }
+  .countdown{
+    top: -7rem;
   }
   .content .text {
     font-size: 1.1rem;
     padding: 4px;
     transform: scale(2);
+  }
+  .about-cont{
+    font-size: 16px;
   }
   #timer div {
     width: 60px;
@@ -445,6 +459,12 @@
 
 
 @media(max-width: 415px){
+  .home{
+    height: 70vh;
+  }
+  .about-text {
+    font-size: 15px;
+}
   .content .text {
     margin-top: 2rem;
     font-size: .8rem;
