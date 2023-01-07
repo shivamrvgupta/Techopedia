@@ -278,6 +278,8 @@
   .home{
     height: 55vh;
   }
+  .about-cont {
+    top: -6rem;}
   .content .text {
     font-size: 2rem;
     padding: 8px;

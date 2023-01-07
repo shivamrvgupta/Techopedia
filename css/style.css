@@ -265,7 +265,7 @@ nav #brand a:hover {
 .about-cont {
   font-weight: 400 !important;
   color: #c1cae8a2;
-  top:-5rem;
+  top:-4rem;
   text-align: center;
   position: relative;
 }
@@ -4158,7 +4158,7 @@ font-weight: 700;
 
 .countdown{
   position: relative;
-  top:-2rem;
+  /* top:-2rem; */
 }
 
 @media (max-width:700px) {
