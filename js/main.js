@@ -115,69 +115,69 @@ TweenMax.staggerFrom(
   0.1
 );
 
+// Timer
 
-$(document).ready(function () {
+ // The data/time we want to countdown to
+ var countDownDate = new Date("Jan 22, 2023 16:37:52").getTime();
+      
+ // Run myfunc every second
+ var myfunc = setInterval(function() {
 
-  function second_passed() {
-    $('.clock').removeClass('is-off');
-  }
-  setTimeout(second_passed, 2000)
-
-  $('.switcher').on('click', function(e) {
-    e.preventDefault();
-    $('.screen').toggleClass('glitch');
-  });
-
-
-  var newDate = new Date();
-  newDate.setDate(newDate.getDate());
-
-  setInterval( function() {
-
-    var hours    = new Date().getHours();
-    var seconds  = new Date().getSeconds();
-    var minutes  = new Date().getMinutes();
-
-    var realTime = ( hours < 10 ? '0' : '' ) + hours + ' : ' + ( minutes < 10 ? '0' : '' ) + minutes + ' : ' + ( seconds < 10 ? '0' : '' ) + seconds
-
-    $('.time').html(realTime);
-    $('.time').attr('data-time', realTime);
-
-  }, 1000);
-
-});
+ var now = new Date().getTime();
+ var timeleft = countDownDate - now;
+     
+ // Calculating the days, hours, minutes and seconds left
+ var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+ var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+ var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+ var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+     
+ // Result is output to the specific element
+ document.getElementById("days").innerHTML = days + "d "
+ document.getElementById("hours").innerHTML = hours + "h " 
+ document.getElementById("minutes").innerHTML = minutes + "m " 
+ document.getElementById("seconds").innerHTML = seconds + "s " 
+     
+ // Display the message when countdown is over
+ if (timeleft < 0) {
+     clearInterval(myfunc);
+     document.getElementById("days").innerHTML = ""
+     document.getElementById("hours").innerHTML = "" 
+     document.getElementById("mins").innerHTML = ""
+     document.getElementById("secs").innerHTML = ""
+     document.getElementById("end").innerHTML = "TIME UP!!";
+ }
+ }, 1000);
+ 
 
 
-
-
-// FAQ
-
-let toggles = document.getElementsByClassName('faq-wrapper');
-let contentDiv = document.getElementsByClassName('faq-content');
-let icons = document.getElementsByClassName('bx');
-
-for(let i=0; i<toggles.length; i++){
-    toggles[i].addEventListener('click', ()=>{
-        if( parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight){
-            contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
-            toggles[i].style.color = "#23daab";
-            icons[i].classList.remove('bx-plus');
-            icons[i].classList.add('bx-minus');
-        }
-        else{
-            contentDiv[i].style.height = "0px";
-            toggles[i].style.color = "#111130";
-            icons[i].classList.remove('bx-minus');
-            icons[i].classList.add('bx-plus');
-        }
-
-        for(let j=0; j<contentDiv.length; j++){
-            if(j!==i){
-                contentDiv[j].style.height = "0px";
-                toggles[j].style.color = "#111130";
-                icons[j].classList.remove('bx-minus');
-                icons[j].classList.add('bx-plus');
-            }
-        }
-    });
-}
+              let toggles = document.getElementsByClassName('faq-wrapper');
+                let contentDiv = document.getElementsByClassName('faq-content');
+                let icons = document.getElementsByClassName('bx');
+                
+                for(let i=0; i<toggles.length; i++){
+                    toggles[i].addEventListener('click', ()=>{
+                        if( parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight){
+                            contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+                            toggles[i].style.color = "#23daab";
+                            icons[i].classList.remove('bx-plus');
+                            icons[i].classList.add('bx-minus');
+                        }
+                        else{
+                            contentDiv[i].style.height = "0px";
+                            toggles[i].style.color = "#111130";
+                            icons[i].classList.remove('bx-minus');
+                            icons[i].classList.add('bx-plus');
+                        }
+                
+                        for(let j=0; j<contentDiv.length; j++){
+                            if(j!==i){
+                                contentDiv[j].style.height = "0px";
+                                toggles[j].style.color = "#111130";
+                                icons[j].classList.remove('bx-minus');
+                                icons[j].classList.add('bx-plus');
+                            }
+                        }
+                    });
+                }
+                
